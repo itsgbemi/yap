@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yap! Free Your Thoughts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="preloader" role="dialog" aria-labelledby="preloader-heading">
+        <div class="preloader-content">
+            <h1 id="preloader-heading">
+                Would you like to <span class="yap-text">yap!</span> with music?
+            </h1>
+            <div class="music-buttons">
+                <button id="music-on" aria-label="Start with music">Music On</button>
+                <button id="music-off" aria-label="Start without music">Music Off</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="https://static.wixstatic.com/mp3/67a3b0_e227f001f81a4c8eb4d361e6c911ed85.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="content">
+        <header class="main-header">
+            <span class="yap-text">Yap!</span>
+        </header>
+    </div>
+
+    <div class="accessibility-icon" id="accessibility-icon">
+        <img src="accessibility.svg" alt="Accessibility Icon">
+    </div>
+
+    <div class="accessibility-popup" id="accessibility-popup">
+        <h4>Accessibility Options</h4>
+        <button id="toggle-music">Toggle Music</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
